@@ -1,0 +1,68 @@
+.description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+    flex-wrap: wrap;
+}
+
+.acide {
+    margin-top: 40px;
+    width: 70%;
+    height: 20%;
+    background-color:bisque;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+}
+
+.lemon {
+    margin-left: 20px;
+    width: 10%;
+    height: 80%;
+}
+
+.taste {
+    width: 70%;
+    height: 20%;
+    background-color: bisque;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+}
+
+.logo_taste {
+    margin-left: 20px;
+    width: 10%;
+    height: 80%;
+}
+
+.healthy {
+    width: 70%;
+    height: 20%;
+    background-color: bisque;
+    border-radius: 5px;
+    margin-bottom: 40px;
+
+    display: flex;
+    align-items: center;
+}
+
+.logo_healthy {
+    margin-left: 20px;
+    width: 10%;
+    height: 80%;
+}
+
+.area_star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.star {
+    width: 10%;
+}
+
