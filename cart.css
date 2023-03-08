@@ -31,7 +31,7 @@
     animation-fill-mode: both;
 
     display: flex;
-    flex-direction: row-reverse;
+    /* flex-direction: row; */
 
 }
 
@@ -39,13 +39,17 @@
 
     animation-name: spawn_menu_right;
     animation-duration: 0.1s;
-    animation-timing-function: ease-in;
+    animation-timing-function: easeOutCirc;
     animation-fill-mode: both;
 
     width: 40%;
     min-width: 600px;
     height: 100%;
     background-color: rgb(45, 45, 45);
+}
+
+#left_right {
+    flex: 1;
 }
 
 #header_menu_cart {
@@ -62,4 +66,13 @@
     height: 70%;
     margin-right: 25px;
     cursor: pointer;
+}
+
+#header_menu_cart > span {
+    flex: 1;
+    text-align: center;
+    line-height: 100%;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 45px;
+    color: white;
 }

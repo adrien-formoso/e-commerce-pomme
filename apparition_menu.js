@@ -19,9 +19,16 @@ logo_cart.onclick = function (){
     body.appendChild(cart_menu)
 
     const div_cart_menu = document.getElementById("cart_menu")
+ 
 
+        const left_right = document.createElement("div");
+
+        left_right.id = "left_right"
+
+        cart_menu.appendChild(left_right)
 
         const menu_right = document.createElement("div");
+
 
         menu_right.id = "menu_right"
 
@@ -34,7 +41,6 @@ logo_cart.onclick = function (){
 
             menu_right.appendChild(header_menu_cart)
 
-
                 const red_cross_close = document.createElement("img"); 
 
                 red_cross_close.id = "red_cross_close"
@@ -42,7 +48,20 @@ logo_cart.onclick = function (){
 
                 header_menu_cart.appendChild(red_cross_close)
 
+                const title_cart_header = document.createElement("span"); 
+
+                title_cart_header.innerText = "Votre panier"
+
+                header_menu_cart.appendChild(title_cart_header)
+
+
 document.getElementById("red_cross_close").onclick = function () {
+
+    body.removeChild(cart_menu)
+
+};
+
+document.getElementById("left_right").onclick = function () {
 
     body.removeChild(cart_menu)
 
