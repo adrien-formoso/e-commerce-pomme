@@ -174,8 +174,6 @@ button_granny.onclick = function (event) {
     } else {
         panier.set("La_granny_Smith",valeur)
     }
-
-    
 };
 
 button_fuji.onclick = function (event) {
