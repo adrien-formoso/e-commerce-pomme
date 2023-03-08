@@ -18,6 +18,8 @@ const input_golden = document.querySelector("#form_golden > input");
 
 function show_article () {
 
+    total = 0
+
     panier.forEach(function (valeur,nom) {
         article = document.createElement("article")
 
@@ -37,7 +39,6 @@ function show_article () {
                 header_article.innerText = nom.replace(/_/g," ");
 
                 selector= "#"+nom+" :first-child"
-                console.log(selector)
 
                 document.querySelector(selector).appendChild(header_article)
 
@@ -47,7 +48,6 @@ function show_article () {
                 quantity_article.innerText = "Quantité : "+valeur
                 quantity_article.classList.add("quantity")
                 selector= "#"+nom+" :first-child"
-                console.log(selector)
 
                 document.querySelector(selector).appendChild(quantity_article)
 
@@ -74,10 +74,10 @@ function show_article () {
 
                 sum_article = document.createElement("div")
 
-                sum_article.innerText = "total : "+(valeur*unit_price)+"€"
+                sum_article.innerText = "total : "+(valeur*unit_price).toFixed(2)+"€"
+                total = total + valeur*unit_price
                 sum_article.classList.add("quantity")
                 selector= "#"+nom+" :first-child"
-                console.log(selector)
 
                 document.querySelector(selector).appendChild(sum_article)
 
@@ -86,7 +86,7 @@ function show_article () {
         const footer_menu_cart = document.createElement("div");
 
         footer_menu_cart.id = "footer_menu_cart"
-        footer_menu_cart.innerText = "Valider la commande"
+        footer_menu_cart.innerText = "Valider la commande de : "+total.toFixed(2)+"€"
 
         document.getElementById("menu_right").appendChild(footer_menu_cart)
     };
@@ -169,22 +169,35 @@ button_granny.onclick = function (event) {
     event.preventDefault();
     valeur = input_granny.value;
 
-    panier.set("La_granny_Smith",valeur)
+    if (panier.has("La_granny_Smith")) {
+        panier.set("La_granny_Smith",parseInt(valeur)+ parseInt(panier.get("La_granny_Smith")))
+    } else {
+        panier.set("La_granny_Smith",valeur)
+    }
+
+    
 };
 
 button_fuji.onclick = function (event) {
     event.preventDefault();
     valeur = input_fuji.value;
-
-    panier.set("La_Fuji",valeur)
- 
+    
+    if (panier.has("La_Fuji")) {
+        panier.set("La_Fuji",parseInt(valeur)+ parseInt(panier.get("La_Fuji")))
+    } else {
+        panier.set("La_Fuji",valeur)
+    }
 };
 
 button_golden.onclick = function (event) {
     event.preventDefault();
     valeur = input_golden.value;
 
-    panier.set("La_Golden",valeur)
- 
+    if (panier.has("La_Golden")) {
+        panier.set("La_Golden",parseInt(valeur)+ parseInt(panier.get("La_Golden")))
+    } else {
+        panier.set("La_Golden",valeur)
+    }
+
 };
 
