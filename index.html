@@ -8,29 +8,27 @@
     <link rel="stylesheet" href="./scrollbar.css">
     <link rel="stylesheet" href="./description.css">
     <link rel="stylesheet" href="./addcart.css">
+    <link rel="stylesheet" href="./cart.css">
+    <link rel="stylesheet" href="./launch_page.css">
     <link rel="shortcut icon" type="image/x-icon" href="./asset/logo_pomme_header.png" />
     <title>La bonne pomme</title>
 </head>
 <body>
     
     <header>
-        <img id="apple_header" src="./asset/logo_pomme_header.png" alt="pomme_verte">
-        <div id="title"><span>La bonne pomme</span></div>
-        <img id="cart" src="./asset/cart.svg" alt="">
+        <div>
+            <img id="apple_header" src="./asset/logo_pomme_header.png" alt="pomme_verte">
+            <div id="title"><span>La bonne pomme</span></div>
+            <div>
+            <img id="cart" src="./asset/cart.svg" alt="">
+            </div>
+        </div>
     </header>
     <section id="first_section">
         <div class="back_ground_light">
         <img class="apple" src="./asset/granny.png" alt="pomme verte">
-        <form action="">
-            <select name="quantity" autocomplete="off" id="quantity" tabindex="0" data-action="a-dropdown-select">     
-                <option value="1" selected="">1</option>       
-                <option value="2">2 </option>       
-                <option value="3">3 </option>       
-                <option value="4">4 </option>       
-                <option value="5">5 </option>       
-                <option value="6">6 </option>       
-                <option value="7">7 </option>     
-            </select>
+        <form id="form_granny" action="">
+            <input type="number" min="1" value="1">
             <button class="add_cart"> ajouter au panier
             </button>
         </form>
@@ -72,20 +70,11 @@
             </div>
         </div>
     </section>
-
     <section id="second_section">
         <div class="back_ground_light">
             <img class="apple" src="./asset/fuji.png" alt="pomme rouge">
-            <form action="">
-                <select name="quantity" autocomplete="off" id="quantity" tabindex="0" data-action="a-dropdown-select">     
-                    <option value="1" selected="">1</option>       
-                    <option value="2">2 </option>       
-                    <option value="3">3 </option>       
-                    <option value="4">4 </option>       
-                    <option value="5">5 </option>       
-                    <option value="6">6 </option>       
-                    <option value="7">7 </option>     
-                </select>
+            <form id="form_fuji" action="">
+                <input type="number" min="1" value="1">
                 <button class="add_cart"> ajouter au panier
                 </button>
             </form>
@@ -126,20 +115,11 @@
             </div>
         </div>
     </section>
-
     <section id="third_section">
         <div class="back_ground_light">
-            <img class="apple" src="./asset/golden.png" alt="pomme rouge">
-            <form action="">
-                <select name="quantity" autocomplete="off" id="quantity" tabindex="0" data-action="a-dropdown-select">     
-                    <option value="1" selected="">1</option>       
-                    <option value="2">2 </option>       
-                    <option value="3">3 </option>       
-                    <option value="4">4 </option>       
-                    <option value="5">5 </option>       
-                    <option value="6">6 </option>       
-                    <option value="7">7 </option>     
-                </select>
+            <img class="apple" src="./asset/golden.png" alt="pomme jaune">
+            <form id="form_golden" action="">
+                <input type="number" min="1" value="1">
                 <button class="add_cart"> ajouter au panier
                 </button>
             </form>
@@ -175,12 +155,12 @@
                         <img class="star" src="./asset/Star_.svg" alt="full star">
                         <img class="star" src="./asset/empty_star.svg" alt="empty star">
                         <img class="star" src="./asset/empty_star.svg" alt="empty star">
-                        
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+<script src="./apparition_menu.js"></script>
+<script src="./gestion_produit_cart.js"></script>
 </body>
 </html>
