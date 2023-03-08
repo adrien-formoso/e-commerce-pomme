@@ -9,11 +9,11 @@ const red_cross_close_logo = document.getElementById("red_cross_close")
 panier = new Map();
 
 const menu_right= document.getElementById("menu_right")
-const button_granny = document.querySelector("#form_granny > button");
+const button_granny = document.querySelector("#form_granny > div");
 const input_granny = document.querySelector("#form_granny > input");
-const button_fuji= document.querySelector("#form_fuji > button");
+const button_fuji= document.querySelector("#form_fuji > div");
 const input_fuji = document.querySelector("#form_fuji > input");
-const button_golden = document.querySelector("#form_golden > button");
+const button_golden = document.querySelector("#form_golden > div");
 const input_golden = document.querySelector("#form_golden > input");
 
 function show_article () {
