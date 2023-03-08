@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./scrollbar.css">
     <link rel="stylesheet" href="./description.css">
     <link rel="stylesheet" href="./addcart.css">
+    <link rel="stylesheet" href="./cart.css">
     <link rel="shortcut icon" type="image/x-icon" href="./asset/logo_pomme_header.png" />
     <title>La bonne pomme</title>
 </head>
@@ -21,7 +22,7 @@
     <section id="first_section">
         <div class="back_ground_light">
         <img class="apple" src="./asset/granny.png" alt="pomme verte">
-        <form action="">
+        <form id="form_granny" action="">
             <input type="number" min="1" value="1">
             <button class="add_cart"> ajouter au panier
             </button>
@@ -67,7 +68,7 @@
     <section id="second_section">
         <div class="back_ground_light">
             <img class="apple" src="./asset/fuji.png" alt="pomme rouge">
-            <form action="">
+            <form id="form_fuji" action="">
                 <input type="number" min="1" value="1">
                 <button class="add_cart"> ajouter au panier
                 </button>
@@ -111,8 +112,8 @@
     </section>
     <section id="third_section">
         <div class="back_ground_light">
-            <img class="apple" src="./asset/golden.png" alt="pomme rouge">
-            <form action="">
+            <img class="apple" src="./asset/golden.png" alt="pomme jaune">
+            <form id="form_golden" action="">
                 <input type="number" min="1" value="1">
                 <button class="add_cart"> ajouter au panier
                 </button>
@@ -154,5 +155,6 @@
             </div>
         </div>
     </section>
+<script src="./scrypt.js"></script>
 </body>
 </html>
