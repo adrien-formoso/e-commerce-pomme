@@ -32,3 +32,9 @@ form {
     
 }
 
+@media (max-width : 1440px) {
+    .add_cart {
+        height: 40%;
+    }
+}
+

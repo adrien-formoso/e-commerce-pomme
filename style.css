@@ -14,26 +14,43 @@ header {
     background-color: rgb(30, 30, 30);
     height: 7rem;
     width: 100%;
+}
 
+header :first-child {
+    height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 #apple_header {
-    height: 70%;
+    width: 80px;
+    height: 80px;
     margin: 10px;
 }
 
 #title {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 60px;
+    font-size: 5vw;
     margin: 10px;
 }
 
-#cart {
-    height: 70%;
+@media (max-width: 1440px) {
+    #title {
+        font-size: 3vw;
+    }
+
+
+}
+
+header > div {
+    height: 100%;
+}
+
+#cart{
+    height: 5rem;
     margin-right: 20px;
     cursor: pointer;
 }

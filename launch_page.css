@@ -1,0 +1,16 @@
+@keyframes spawn_header {
+    from {
+        transform:translateY(-7rem);
+    }
+
+    to {
+        transform:translateY(0);
+    }
+}
+
+header :first-child {
+
+    animation-name: spawn_header;
+    animation-duration: 1s;
+
+}
