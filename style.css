@@ -183,6 +183,20 @@ form {
     }
 }
 
+@media (max-width : 440px) {
+    .add_cart {
+        justify-content: center;
+        align-items: center;
+        font-size: 5vw;
+    }
+}
+
 .text_header {
     font-size: 5vh;
+}
+
+@media (max-width : 1060px) {
+    .text_header {
+        font-size: 2vh;
+    }
 }

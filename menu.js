@@ -86,9 +86,15 @@ function show_article () {
         const footer_menu_cart = document.createElement("div");
 
         footer_menu_cart.id = "footer_menu_cart"
-        footer_menu_cart.innerText = "Valider la commande de : "+total.toFixed(2)+"€"
 
         document.getElementById("menu_right").appendChild(footer_menu_cart)
+
+        const footer_menu_btn = document.createElement("div");
+
+        footer_menu_btn.id = "footer_menu_btn"
+        footer_menu_btn.innerText = "Valider la commande de : "+total.toFixed(2)+"€"
+
+        footer_menu_cart.appendChild(footer_menu_btn)
     };
 
 
@@ -117,14 +123,18 @@ logo_cart.onclick = function (){
         cart_menu.appendChild(menu_right)
 
 
+            const header_menu = document.createElement("div");
+
+            header_menu.id = "header_menu"
+
+            menu_right.appendChild(header_menu)
+
+
             const header_menu_cart = document.createElement("div");
 
             header_menu_cart.id = "header_menu_cart"
 
-            menu_right.appendChild(header_menu_cart)
-            
-
-
+            header_menu.appendChild(header_menu_cart)
 
 
             const body_menu_cart = document.createElement("div");
